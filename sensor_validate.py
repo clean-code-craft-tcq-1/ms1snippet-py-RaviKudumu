@@ -12,6 +12,7 @@ def is_sensor_reading_proper(values, sensor_name):
         if(not sensor_working_properly(values[i], values[i + 1], sensor_max_difference[sensor_name])):
             return False
     return True
+
 def remove_none_values(values):
     values = [i for i in values if i]
     return values
